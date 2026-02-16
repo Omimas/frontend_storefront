@@ -25,3 +25,9 @@ A modern, fast, and responsive e-commerce interface built with **Vanilla JavaScr
 ├── styles.css          # Global styling and responsive design
 ├── scripts.js          # Core logic (Routing, Search, Slider)
 └── index.html          # Main entry point
+
+async function loadHTML(id, url) {
+  const response = await fetch(url);
+  const text = await response.text();
+  document.getElementById(id).innerHTML = text;
+}
