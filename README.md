@@ -32,8 +32,8 @@ The project utilizes an async/await pattern to load common UI elements, reducing
 
 ```text
 async function loadHTML(id, url) {
-  ├── const response = await fetch(url);
-  ├── const text = await response.text();
-  ├── document.getElementById(id).innerHTML = text;
+   const response = await fetch(url);
+   const text = await response.text();
+   document.getElementById(id).innerHTML = text;
 }
 ```
