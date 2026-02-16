@@ -25,6 +25,10 @@ A modern, fast, and responsive e-commerce interface built with **Vanilla JavaScr
 ├── styles.css          # Global styling and responsive design
 ├── scripts.js          # Core logic (Routing, Search, Slider)
 └── index.html          # Main entry point
+```
+## Technical Implementation
+Asynchronous Component Injection
+The project utilizes an async/await pattern to load common UI elements, reducing code duplication and improving project organization:
 
 async function loadHTML(id, url) {
   const response = await fetch(url);
