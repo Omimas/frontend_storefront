@@ -1,36 +1,27 @@
-# E-Commerce Project
+# Omimas Frontend Storefront
 
----
+A modern, fast, and responsive e-commerce interface built with **Vanilla JavaScript**. This project focuses on modular frontend architecture, dynamic content rendering, and efficient client-side search algorithms without relying on heavy frameworks.
 
-## 🚀 About the Project
+## 🚀 Key Features
 
-This is a basic e-commerce application where users can browse products, add them to the cart, and place orders.
+* **Modular Architecture:** Uses a custom `loadHTML` utility to asynchronously inject reusable components like Headers and Footers, improving maintainability.
+* **Dynamic Category Routing:** Implements a state-based content switcher that renders products based on categories (Electronics, Fashion, Books, etc.) from a centralized data object.
+* **Smart Search Engine:** A robust client-side search functionality that aggregates data across all categories and provides real-time filtering.
+* **Dynamic Image Slider:** An automated promotional banner system to showcase discounts and featured products.
+* **Fully Responsive UI:** A custom CSS grid and flexbox-based layout optimized for both desktop and mobile users, featuring a sticky navigation header.
 
-The backend is built with Node.js and Express, and the frontend uses HTML, CSS, and JavaScript.
+## 🛠️ Technical Stack
 
----
+* **Frontend:** HTML5, CSS3 (Modern Flexbox/Grid)
+* **Scripting:** Vanilla JavaScript (ES6+)
+* **Asynchronous Logic:** Fetch API for partial loading and dynamic data handling.
+* **Styling:** Custom CSS with media queries for cross-device compatibility.
 
-## ⚙️ Features
+## 📂 Project Structure
 
-- Product listing with category filtering  
-- Add products to the shopping cart  
-- Responsive design for mobile and desktop  
-- Simple and user-friendly interface  
-- REST API powered by Node.js
-
----
-
-## 📁 Project Structure
-
-- backend/ # Backend code (Node.js)
-- frontend/ # Frontend files (HTML, CSS, JS, images)
-- products.json # Product data file
-- .gitignore # Git ignore file
-
----
-![image](https://github.com/user-attachments/assets/893a99b1-e229-47c5-a2ac-744be616ee8c)
-
-![image](https://github.com/user-attachments/assets/34029381-66bd-4ebd-b201-b8b2197d83e9)
-
-![image](https://github.com/user-attachments/assets/29db1867-682d-46bf-8bb3-dfc48fc7ddee)
-
+```text
+├── partials/           # Reusable HTML components (Header, Footer)
+├── images/             # Product and UI assets (Banners, Logos)
+├── styles.css          # Global styling and responsive design
+├── scripts.js          # Core logic (Routing, Search, Slider)
+└── index.html          # Main entry point
